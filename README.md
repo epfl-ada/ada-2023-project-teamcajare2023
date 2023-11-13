@@ -21,5 +21,11 @@ IMDb ratings: IMDb (an acronym for Internet Movie Database) is an online databas
 ## Proposed timeline
 
 ## Organization within the team
-
+| | Task |
+| :---:|---|
+| Amélie | |
+| Anna-Rose | |
+| Coline | |
+| Elisa | |
+| Jeanne | |
 ## Questions
