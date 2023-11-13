@@ -2,9 +2,9 @@
 
 ## Abstract
 
-The goal of this project is to study the roles given to women in the cinematic industry. While it might be common knowledge that the representation of women is very different from the representation of men, we want to show it with the big amount of data at our disposal. One of our goals is to create clusters of the characters in movies to get a more comprehensive view of the evolution of the roles given to women. 
-
-Then, there are common stereotypes about different big movie industries in the world: American movies are commonly perceived as blockbusters-oriented, prioritizing entertainment, while European productions are thought to be more artistic and intellectual. Finally, the common Bollywood movie has a family-centric plot that shapes the roles given to actresses in it. Thus with our study we wish to confirm or infirm those clichés through the analysis of the roles given to women in productions from the different industries. 
+Women often face stereotypes, from traditional expectations about their domestic roles to uncertainties about their ability for leadership or physical strength, all exacerbated by societal beauty standards. But do these stereotypes and inequalities reflect in the movie industry ?  
+In addition, there are common stereotypes about different big movie industries in the world: American movies are commonly perceived as blockbusters-oriented, prioritizing entertainment, while European productions are thought to be more artistic and intellectual. Finally, the common Bollywood movie has a family-centric plot that shapes the roles given to actresses in it. 
+To answer these questions and confirm or infirm those clichés, we will use the CMU Movie Summary Corpus dataset and focus our analysis first on getting a more comprehensive view of the evolution of the roles given to women, and then compare different big movie industries. 
 
 ## Research questions
 
