@@ -2,18 +2,17 @@
 
 ## Abstract
 
-Women often face stereotypes, from traditional expectations about their domestic roles to uncertainties about their ability for leadership or physical strength, all exacerbated by societal beauty standards. But do these stereotypes and inequalities reflect in the movie industry ?  
-In addition, there are common stereotypes about different big movie industries in the world: American movies are commonly perceived as blockbusters-oriented, prioritizing entertainment, while European productions are thought to be more artistic and intellectual. Finally, the common Bollywood movie has a family-centric plot that shapes the roles given to actresses in it. 
-To answer these questions and confirm or infirm those clichés, we will use the CMU Movie Summary Corpus dataset and focus our analysis first on getting a more comprehensive view of the evolution of the roles given to women, and then compare different big movie industries. 
+Women often face stereotypes, from traditional expectations about their domestic roles to uncertainties about their ability for leadership or physical strength, all exacerbated by societal beauty standards. The movie industry is the reflection of our society and therefore also reflects these stereotypes and inequalities. We want to analyse to what extend this is the case and in what aspects of the film industry it is the most visible.
+We want to link our analysis to the region of production of the movies, indeed there are common stereotypes about different big movie industries in the world: American movies are commonly perceived as blockbusters-oriented, prioritizing entertainment, maybe more oriented towards mannhood. While European productions are thought to be more artistic and intellectual, maybe more equal in terms of gender. As well as, the Bollywood movie having a family-centric plot that shapes the roles given to actresses in it. 
+To answer these questions and confirm or infirm those clichés, we will use the CMU Movie Summary Corpus dataset and focus our analysis first on getting a more comprehensive view of the evolution of the roles given to women, and then compare it in different big movie industries. 
 
 ## Research questions
 
-Knowing that women are treated differently in the movie industry, we are interested to dig deeper and understand how movies with higher proportions of women are recieved by the public, are those movies more or less popular ? how are they rated ? do they really have less comercial success than movies with more men ?
-
-
-2 axes:
-- étude longitudinale de l'évolution des actrices représentées dans les films et le type de rôles qu'elles occupent
-- étude de comment les films sont reçus selon la représentation des femmes dedans
+Knowing that women are treated differently in the movie industry, we are interested to dig deeper:
+- Explore quantitatively the extend of the inequalities in the representation of women in movies: How younger are the actresses compared to the actors ? What is the difference in the proportion of actresses and actors? What genres are more prone to inequalities ?
+- Understand how movies with higher proportions of women are recieved by the public, are those movies more or less popular ? how are they rated ? do they really have less comercial success than movies with more men ?
+- Explore the character types of female and male roles: what are the typical roles ? How have they evolved ?
+- Analyse those differences around three geographical zones we have chosen (North America, Europe, India): Are the preconceived ideas about Hollywood, Bollywood and European movie industries true when it comes to the roles of women in the plot? 
 
 ## Proposed additional datasets 
 
