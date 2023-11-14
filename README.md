@@ -10,8 +10,8 @@ To answer these questions and confirm or infirm those clichés, we will use the 
 
 Knowing that women are treated differently in the movie industry, we are interested to dig deeper:
 - Explore quantitatively the extend of the inequalities in the representation of women in movies: How younger are the actresses compared to the actors ? What is the difference in the proportion of actresses and actors? What genres are more prone to inequalities ?
+- Explore qualitatively how women are represented in the movies through the character types of female and male roles: what are the typical roles ? How have they evolved ?
 - Understand how movies with higher proportions of women are recieved by the public, are those movies more or less popular ? how are they rated ? do they really have less comercial success than movies with more men ?
-- Explore the character types of female and male roles: what are the typical roles ? How have they evolved ?
 - Analyse those differences around three geographical zones we have chosen (North America, Europe, India): Are the preconceived ideas about Hollywood, Bollywood and European movie industries true when it comes to the roles of women in the plot? 
 
 ## Proposed additional datasets 
@@ -19,6 +19,32 @@ Knowing that women are treated differently in the movie industry, we are interes
 IMDb ratings: IMDb (an acronym for Internet Movie Database) is an online database of information related to films, television series and more, where users can rate the films they watch from 1 to 10. We are mainly interested in the IMDb average score and number of votes per movie. The IMDb title basics and title ratings datasets have been found on IMDb (title.ratings.tsv and title.basics.tsv). 
 
 ## Methods
+
+J'ai parcouru le cours et on peut faire:
+- Vizalisation: 
+    - visualisation 2D avec des heatmaps
+    - PCA
+    - Log axes !!! and anaylse what distribution 
+    - Use colorblind safe palettes when visualising color
+    - interactive visualization framework like D3, Vincent, Bokeh
+    - Annotate graphs if needed to show/underline one specific peak
+- Describing data:
+    - Micro-macro average
+    - Hypothesis testing
+    - Confidence interval
+    - Pearson's correlation coef
+    - Sympson paradox
+- Regression: 
+    - Linear regression
+    - R squared
+
+### Part 1 : Quantitative analysis of gender inequalities in movies
+
+### Part 2 : Qualititative analysis of gender representation in movies
+
+### Part 3 : Analysis of the reception of movies by the public
+
+### Part 4 : Analysis by geographical production region
 
 ## Proposed timeline
 
