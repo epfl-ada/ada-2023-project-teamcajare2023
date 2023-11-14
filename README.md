@@ -8,6 +8,9 @@ To answer these questions and confirm or infirm those clichés, we will use the 
 
 ## Research questions
 
+Knowing that women are treated differently in the movie industry, we are interested to dig deeper and understand how movies with higher proportions of women are recieved by the public, are those movies more or less popular ? how are they rated ? do they really have less comercial success than movies with more men ?
+
+
 2 axes:
 - étude longitudinale de l'évolution des actrices représentées dans les films et le type de rôles qu'elles occupent
 - étude de comment les films sont reçus selon la représentation des femmes dedans
