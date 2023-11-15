@@ -18,11 +18,15 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 ## Proposed additional datasets 
 
-IMDb ratings: IMDb (an acronym for Internet Movie Database) is an online database of information related to films, television series and more, where users can rate the films they watch from 1 to 10. We are mainly interested in the IMDb average score and number of votes per movie. The IMDb title basics and title ratings datasets have been found on IMDb (title.ratings.tsv and title.basics.tsv). 
+**IMDb ratings**: IMDb (an acronym for Internet Movie Database) is an [online database](https://datasets.imdbws.com/) of information related to films, television series and more, where users can rate the films they watch from 1 to 10. We are mainly interested in the IMDb average score and number of votes per movie. The IMDb title basics and title ratings datasets have been found on IMDb (title.ratings.tsv and title.basics.tsv). 
+
+**Oscar awards**: From a [kaggle dataset](https://www.kaggle.com/datasets/unanimad/the-oscar-award) we use the list of films that were awared by the Academy Awards. These awards are an international recognition of excellence in cinematic achievements. The various category winners are awarded a copy of a golden statuette, commonly referred to by its nickname "Oscar".
+
+**Bechdel Test**: JEANNE DESCRIPTION
 
 ## Methods
 
-J'ai parcouru le cours et on peut faire:
+J'ai parcouru le cours et il faudrait essayer d'en placer certains dans le plan:
 - Vizalisation: 
     - visualisation 2D avec des heatmaps
     - PCA
@@ -64,6 +68,8 @@ We merge the movies and characters datasets. In it, we keep only the 16 more fre
 ### Part 3 : Analysis of the reception of movies by the public
 - Analysis of the correlation of actresses in a movie and IMDb ratings with a linear regression
 - Analysis of the correlation of actresses in a movie and Bos Office Revenue with a linear regression
+- Analysis of award wining movies with the oscar dataset
+- According to the Bechdel test result analysis of the reception of the movie
 
 ### Part 4 : Analysis by geographical production region
 - Analysis of the character cluster per production region
@@ -72,11 +78,11 @@ We merge the movies and characters datasets. In it, we keep only the 16 more fre
 
 ## Proposed timeline
 
-24 Nov : Finish quantitative analysis of gender inequalities and of the reception of movies by the public
-1 Dec : Finish analysis by geographical production region
-8 Dec : Finish qualititative analysis of gender representation in movies and make first version of the website
-15 Dec : Finish all the analysis and focus on completing the data story and the esthetics of the website
-22 Dec : Final deadline for P3
+- 24 Nov : Finish quantitative analysis of gender inequalities and of the reception of movies by the public
+- 1 Dec : Finish analysis by geographical production region
+- 8 Dec : Finish qualititative analysis of gender representation in movies and make first version of the website
+- 15 Dec : Finish all the analysis and focus on completing the data story and the esthetics of the website
+- 22 Dec : Final deadline for P3
 
 ## Organization within the team
 | | Task |
