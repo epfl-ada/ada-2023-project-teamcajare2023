@@ -39,6 +39,9 @@ J'ai parcouru le cours et on peut faire:
 - Regression: 
     - Linear regression
     - R squared
+- Causal analysis of observational data:
+    - Matching on known covariates (propensity score)
+- ML ?
 
 ## Step 1: Data scrapping and cleaning 
 After having downloaded the characters and movies metadata as well as IMDb data, we clean the datasets by removing movies where we have no information about characters' gender and discarding aberrant age, movie runtime or release date values.
@@ -46,17 +49,34 @@ After having downloaded the characters and movies metadata as well as IMDb data,
 ## Step 2: Data pre-processing
 We merge the movies and characters datasets. In it, we keep only the 16 more frequent movie genres
 
-## Step 2: Analysis
+## Step 3: Analysis
 
 ### Part 1 : Quantitative analysis of gender inequalities in movies
+- Age of actors and actresses : Analysis of distributions and of the statistical significance (t-test), Evolution across the years with confidence interval
+- Gender distribution in charcters: quantification and analysis across the years with confidence interval
+- Analysis across genre of movie of age and gender distribution
+- Analysis of number of movies shot per actor and actress
 
 ### Part 2 : Qualititative analysis of gender representation in movies
+- Word Cloud visualization of common character tropes per gender
+- Cluster character types from the movie plots ( ANNA-ROSE DESCRIPTION)
 
 ### Part 3 : Analysis of the reception of movies by the public
+- Analysis of the correlation of actresses in a movie and IMDb ratings with a linear regression
+- Analysis of the correlation of actresses in a movie and Bos Office Revenue with a linear regression
 
 ### Part 4 : Analysis by geographical production region
+- Analysis of the character cluster per production region
+- Quantification of gender differences across the regions
+
 
 ## Proposed timeline
+
+24 Nov : Finish quantitative analysis of gender inequalities and of the reception of movies by the public
+1 Dec : Finish analysis by geographical production region
+8 Dec : Finish qualititative analysis of gender representation in movies and make first version of the website
+15 Dec : Finish all the analysis and focus on completing the data story and the esthetics of the website
+22 Dec : Final deadline for P3
 
 ## Organization within the team
 | | Task |
@@ -64,6 +84,6 @@ We merge the movies and characters datasets. In it, we keep only the 16 more fre
 | Amélie | |
 | Anna-Rose | |
 | Coline | |
-| Elisa | |
+| Elisa | Analysis of Box office revenue and ratings, README |
 | Jeanne | |
 ## Questions
