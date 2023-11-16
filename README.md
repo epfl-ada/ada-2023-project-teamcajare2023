@@ -26,32 +26,12 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 ## Methods
 
-J'ai parcouru le cours et il faudrait essayer d'en placer certains dans le plan:
-- Vizalisation: 
-    - visualisation 2D avec des heatmaps
-    - PCA
-    - Log axes !!! and anaylse what distribution 
-    - Use colorblind safe palettes when visualising color
-    - interactive visualization framework like D3, Vincent, Bokeh
-    - Annotate graphs if needed to show/underline one specific peak
-- Describing data:
-    - Micro-macro average
-    - Hypothesis testing
-    - Confidence interval
-    - Pearson's correlation coef
-    - Sympson paradox
-- Regression: 
-    - Linear regression
-    - R squared
-- Causal analysis of observational data:
-    - Matching on known covariates (propensity score)
-- ML ?
-
 ## Step 1: Data scrapping and cleaning 
 After having downloaded the characters and movies metadata as well as IMDb data, we clean the datasets by removing movies where we have no information about characters' gender and discarding aberrant age, movie runtime or release date values.
 
 ## Step 2: Data pre-processing
 We merge the movies and characters datasets. In it, we keep only the 16 more frequent movie genres
+DECRIRE PLUS
 
 ## Step 3: Analysis
 
@@ -66,8 +46,8 @@ We merge the movies and characters datasets. In it, we keep only the 16 more fre
 - Cluster character types from the movie plots ( ANNA-ROSE DESCRIPTION)
 
 ### Part 3 : Analysis of the reception of movies by the public
-- Analysis of the correlation of actresses in a movie and IMDb ratings with a linear regression
-- Analysis of the correlation of actresses in a movie and Bos Office Revenue with a linear regression
+- Analysis of the correlation of actresses in a movie and IMDb ratings with a linear regression, calculate statistical significance
+- Analysis of the correlation of actresses in a movie and Bos Office Revenue with a linear regression, calculate statistical significance
 - Analysis of award wining movies with the oscar dataset
 - According to the Bechdel test result analysis of the reception of the movie
 
