@@ -14,7 +14,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 - Explore quantitatively the extend of the inequalities in the representation of women in movies: How younger are the actresses compared to the actors? What is the difference in the proportion of actresses and actors? What genres are more prone to inequalities?
 - Explore qualitatively how women are represented in the movies through the character types of female and male roles: what are the typical roles? How have they evolved?
 - Understand how movies with higher proportions of women are recieved by the public: are those movies more or less popular? How are they rated? Do they really have less commercial success than movies with more men?
-- Analyse those differences around three geographical zones we have chosen (North America, Europe, India): are the preconceived ideas about Hollywood, Bollywood and European movie industries true when it comes to the roles of women in the plot? 
+- Analyse those differences around three geographical areas we have chosen (United States, India and Europe): are the preconceived ideas about Hollywood, Bollywood and European movie industries true when it comes to the roles of women in the plot? 
 
 ## Proposed additional datasets 
 
