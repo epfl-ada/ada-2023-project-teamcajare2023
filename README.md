@@ -18,7 +18,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 **Oscar awards**: Awards are international recognition of excellence in cinema. Using this [kaggle dataset](https://www.kaggle.com/datasets/unanimad/the-oscar-award) we got the list of films that were awarded by the Academy Awards.
 
-**Bechdel Test**: The Bechdel test is a measure of the representation of women in film. We used the [Bechdel Kaggle dataset](https://www.kaggle.com/datasets/treelunar/bechdel-test-movies-as-of-feb-28-2023) to obtain the test results for several thousands of film.
+**Bechdel Test**: The Bechdel test is a measure of the representation of women in film. We used the [Bechdel Kaggle dataset](https://www.kaggle.com/datasets/treelunar/bechdel-test-movies-as-of-feb-28-2023) to obtain the test results. We have a rating where 1 means a movie has two female characters but they do not talk to each other, 2 means a movie has two women talking but they talk about men and 3 means completely passing the Bechdel Test.
 
 ## Methods
 
