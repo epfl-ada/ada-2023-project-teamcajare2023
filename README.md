@@ -55,7 +55,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 - Analysis of award wining movies with the oscar dataset
 - Analysis of the Bechdel test result in relation with the reception of the movie
 
-### Part 4 : Analysis by geographical production region
+### Part 4 : Analysis by geographical production region 🌎
 - Analysis of the character cluster per production region
 - Quantification of gender differences across the regions
 
@@ -67,7 +67,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 - 15 Dec : Finish all the analysis and focus on completing the data story and the aesthetics of the website
 - 22 Dec : Final deadline for P3
 
-## Organization within the team
+## Organization within the team 📋
 | | Task |
 | :---:|---|
 | Amélie | Preprocessing of movie data set, Preprocessing of geographical regions|
@@ -76,5 +76,5 @@ Knowing that women are treated differently in the movie industry, we are interes
 | Elisa | Analysis of Box-office revenue and ratings, Preprocessing of awards |
 | Jeanne | Preprocessing of Bechdel test, Geographical analysis |
 
-## Questions
+## Questions 
 - Bechdel data set: when merging with the CMU dataset, we are left with around 5000 movies (only 6.17 % of the original). Can we consider this data set usable?
