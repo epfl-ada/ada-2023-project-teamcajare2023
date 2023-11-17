@@ -1,12 +1,12 @@
-# Studying the evolution of gender in movies: roles given to women and public perception
+# Studying the evolution of gender in movies across the world: roles given to women and public perception
 
 ## Abstract
 
 Women face an array of stereotypes, from traditional domestic roles to uncertainties surrounding their capacity for leadership, physical strength, and the added pressure of conforming to beauty standards. The film industry, often seen as reflecting our societal norms, perpetuates these stereotypes. Our objective is to explore this phenomenon and pinpoint the areas where these biases are most outstanding.
 
-Moreover, we aim to enrich our analysis with a regional dimension. Stereotypes exist regarding major movie industries around the world: American cinema often leans toward blockbuster entertainment, possibly emphasizing masculinity, whereas European productions are often perceived as more artistic, intellectual, and potentially more gender-equitable. Bollywood movies tend to have family-centric plots, influencing the roles designated to actresses.
+Moreover, we aim to enrich our analysis with a regional dimension. Stereotypes exist regarding major movie industries around the world: Hollywood often leans toward blockbuster entertainment, possibly emphasizing masculinity, whereas European productions are often perceived as more artistic, intellectual, and potentially more gender-equitable. Bollywood movies tend to have family-centric plots, influencing the roles designated to actresses.
 
-To decipher and validate or debunk these common perceptions, our analysis will begin by studying the evolving roles allocated to women in movies. Subsequently, we will juxtapose these findings across different movie industries.
+To decipher and validate or debunk these common perceptions, our analysis will begin by studying the evolving roles allocated to women in movies. Then, we will juxtapose these findings across different movie industries.
 
 ## Research questions
 
@@ -18,11 +18,11 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 ## Proposed additional datasets 
 
-**IMDb ratings**: IMDb (an acronym for Internet Movie Database) is an [online database](https://datasets.imdbws.com/) of information related to films, television series and more, where users can rate the films they watch from 1 to 10. We are mainly interested in the IMDb average score and number of votes per movie. The IMDb title basics and title ratings datasets have been found on IMDb (title.ratings.tsv and title.basics.tsv). 
+**IMDb ratings**: IMDb is an [online database](https://datasets.imdbws.com/) of information related to films, television series and more, where users can rate the films they watch from 1 to 10. We are mainly interested in the IMDb average score and number of votes per movie (title.ratings.tsv and title.basics.tsv).
 
-**Oscar awards**: From a [kaggle dataset](https://www.kaggle.com/datasets/unanimad/the-oscar-award) we use the list of films that were awarded by the Academy Awards. These awards are an international recognition of excellence in cinematic achievements. The various category winners are awarded a copy of a golden statuette, commonly referred to by its nickname "Oscar".
+**Oscar awards**: Awards are international recognition of excellence in cinema. Using this [kaggle dataset](https://www.kaggle.com/datasets/unanimad/the-oscar-award) we got the list of films that were awarded by the Academy Awards.
 
-**Bechdel Test**: The Bechdel test is a measure of representation of women in film. We used the [Bechdel Kaggle dataset](https://www.kaggle.com/datasets/treelunar/bechdel-test-movies-as-of-feb-28-2023) to obtain the test results for several thousands of film. For each film we have a rating from 1 to 3 where 1 means a movie has two female characters but they do not talk to each other, 2 means a movie has two women talking but they talk about men and 3 means completely passing the Bechdel Test.
+**Bechdel Test**: The Bechdel test is a measure of the representation of women in film. We used the [Bechdel Kaggle dataset](https://www.kaggle.com/datasets/treelunar/bechdel-test-movies-as-of-feb-28-2023) to obtain the test results for several thousands of film.
 
 ## Methods
 
@@ -36,31 +36,28 @@ DECRIRE PLUS
 ## Step 3: Analysis
 
 ### Part 1 : Quantitative analysis of gender inequalities in movies
-- Age of actors and actresses : Analysis of distributions and of the statistical significance (t-test), Evolution across the years with confidence interval
-- Gender distribution in characters: quantification and analysis across the years with confidence interval
+- Age of actors and actresses and Gender distribution in characters: Analysis of distributions and of the statistical significance (t-test), Evolution across the years with confidence interval
 - Analysis across genre of movie of age and gender distribution
 - Analysis of number of movies shot per actor and actress
 
 ### Part 2 : Qualititative analysis of gender representation in movies
 - Word Cloud visualization of common character tropes per gender
-- Cluster character types from the movie plots: the authors of the dataset used the CoreNLP toolkit developed by Stanford University to parse the movie plot summaries. We make use of this data to extract meaningful information about the characters: what action they are the agent or patient of, what their attributes are, how many times they are mentioned in the summary. We use the latter information as a proxy to identify the main character. With all of those information, we will cluster the characters to identify similar ones and then perform further analysis of those cluster (gender, longitudinal and geographical differences).
+- Cluster character types from the movie plots: the authors of the dataset used the CoreNLP toolkit developed by Stanford University to parse the movie plot summaries. Extract meaningful information about the characters: what action they are the agent or patient of, what their attributes are, how many times they are mentioned in the summary (proxy to identify the main character). With all of those information, we will cluster the characters to identify similar ones and then perform further analysis of those cluster (gender, longitudinal and geographical differences).
 
 ### Part 3 : Analysis of the reception of movies by the public
-- Analysis of the correlation of actresses in a movie and IMDb ratings with a linear regression, calculate statistical significance
-- Analysis of the correlation of actresses in a movie and Box Office Revenue with a linear regression, calculate statistical significance
+- Analysis of the correlation of actresses in a movie and IMDb ratings with a linear regression, calculate statistical significance (same with Box Office Revenue)
 - Analysis of award wining movies with the oscar dataset
-- According to the Bechdel test result analysis of the reception of the movie
+- Analysis of the Bechdel test result in relation with the reception of the movie
 
 ### Part 4 : Analysis by geographical production region
 - Analysis of the character cluster per production region
 - Quantification of gender differences across the regions
 
-
 ## Proposed timeline
 
-- 24 Nov : Finish quantitative analysis of gender inequalities and of the reception of movies by the public
+- 24 Nov : Finish quantitative analysis and the reception of movies
 - 1 Dec : Finish analysis by geographical production region
-- 8 Dec : Finish qualitative analysis of gender representation in movies and make first version of the website
+- 8 Dec : Finish qualitative analysis of gender representation and make first version of the website
 - 15 Dec : Finish all the analysis and focus on completing the data story and the aesthetics of the website
 - 22 Dec : Final deadline for P3
 
@@ -74,4 +71,4 @@ DECRIRE PLUS
 | Jeanne | Preprocessing of Bechdel test, Geographical analysis |
 
 ## Questions
-- Concerning the Bechdel data set: when merging with the CMU dataset, we are left with around 5 000 movies (6.17 % of the original). Can we consider this data set usable even if our analysis relies on only a fraction of the movies ?
+- Concerning the Bechdel data set: when merging with the CMU dataset, we are left with around 5 000 movies ( only 6.17 % of the original). Can we consider this data set usable?
