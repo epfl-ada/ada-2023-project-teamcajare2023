@@ -61,11 +61,11 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 ## Proposed timeline ⏱️
 
-- 24 Nov : Finish quantitative analysis and the reception of movies
-- 1 Dec : Finish analysis by geographical production region
-- 8 Dec : Finish qualitative analysis of gender representation and make first version of the website
-- 15 Dec : Finish all the analysis and focus on completing the data story and the aesthetics of the website
-- 22 Dec : Final deadline for P3
+- 24 Nov: Finish quantitative analysis and the reception of movies
+- 1 Dec: Finish analysis by geographical production region
+- 8 Dec: Finish qualitative analysis of gender representation and make first version of the website
+- 15 Dec: Finish all the analysis and focus on completing the data story and the aesthetics of the website
+- 22 Dec: Final deadline for P3
 
 ## Organization within the team 📋
 | | Task |
