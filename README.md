@@ -55,7 +55,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 - Analysis of award wining movies with the oscar dataset
 - Analysis of the Bechdel test result in relation with the reception of the movie
 
-### Part 4 : Analysis by geographical production region 🌎
+### Part 4 : Analysis by geographical production region
 - Analysis of the character cluster per production region
 - Quantification of gender differences across the regions
 
