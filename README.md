@@ -59,7 +59,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 - Analysis of the character cluster per production region
 - Quantification of gender differences across the regions
 
-## Proposed timeline
+## Proposed timeline ⏱️
 
 - 24 Nov : Finish quantitative analysis and the reception of movies
 - 1 Dec : Finish analysis by geographical production region
