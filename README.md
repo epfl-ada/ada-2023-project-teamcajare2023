@@ -47,7 +47,7 @@ DECRIRE PLUS
 
 ### Part 3 : Analysis of the reception of movies by the public
 - Analysis of the correlation of actresses in a movie and IMDb ratings with a linear regression, calculate statistical significance
-- Analysis of the correlation of actresses in a movie and Bos Office Revenue with a linear regression, calculate statistical significance
+- Analysis of the correlation of actresses in a movie and Box Office Revenue with a linear regression, calculate statistical significance
 - Analysis of award wining movies with the oscar dataset
 - According to the Bechdel test result analysis of the reception of the movie
 
