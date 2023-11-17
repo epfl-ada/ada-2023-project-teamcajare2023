@@ -36,7 +36,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 - **Bechdel Dataset** We changed the movie names to align with the CMU format and then merged them based on the movie name and release year.
 
-- **Award Dataset** We merged the award dataset with the CMU dataset based on movie name and release year
+- **Award Dataset** We merged the award dataset with the CMU dataset based on movie name and release year.
 
 
 ## Step 2: Analysis
