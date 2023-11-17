@@ -13,16 +13,16 @@ To decipher and validate or debunk these common perceptions, our analysis will b
 Knowing that women are treated differently in the movie industry, we are interested to dig deeper:
 - Explore quantitatively the extend of the inequalities in the representation of women in movies: How younger are the actresses compared to the actors? What is the difference in the proportion of actresses and actors? What genres are more prone to inequalities?
 - Explore qualitatively how women are represented in the movies through the character types of female and male roles: what are the typical roles? How have they evolved?
-- Understand how movies with higher proportions of women are recieved by the public: are those movies more or less popular? How are they rated? Do they really have less commercial success than movies with more men?
+- Understand how movies with higher proportions of women are received by the public: are those movies more or less popular? How are they rated? Do they really have less commercial success than movies with more men?
 - Analyse those differences around three geographical areas we have chosen (United States of America, India and Europe): are the preconceived ideas about Hollywood, Bollywood and European movie industries true when it comes to the roles of women in the plot? 
 
 ## Proposed additional datasets 
 
 **IMDb ratings**: IMDb (an acronym for Internet Movie Database) is an [online database](https://datasets.imdbws.com/) of information related to films, television series and more, where users can rate the films they watch from 1 to 10. We are mainly interested in the IMDb average score and number of votes per movie. The IMDb title basics and title ratings datasets have been found on IMDb (title.ratings.tsv and title.basics.tsv). 
 
-**Oscar awards**: From a [kaggle dataset](https://www.kaggle.com/datasets/unanimad/the-oscar-award) we use the list of films that were awared by the Academy Awards. These awards are an international recognition of excellence in cinematic achievements. The various category winners are awarded a copy of a golden statuette, commonly referred to by its nickname "Oscar".
+**Oscar awards**: From a [kaggle dataset](https://www.kaggle.com/datasets/unanimad/the-oscar-award) we use the list of films that were awarded by the Academy Awards. These awards are an international recognition of excellence in cinematic achievements. The various category winners are awarded a copy of a golden statuette, commonly referred to by its nickname "Oscar".
 
-**Bechdel Test**: JEANNE DESCRIPTION
+**Bechdel Test**: The Bechdel test is a measure of representation of women in film. We used the [Bechdel Kaggle dataset](https://www.kaggle.com/datasets/treelunar/bechdel-test-movies-as-of-feb-28-2023) to obtain the test results for several thousands of film. For each film we have a rating from 1 to 3 where 1 means a movie has two female characters but they do not talk to each other, 2 means a movie has two women talking but they talk about men and 3 means completely passing the Bechdel Test.
 
 ## Methods
 
@@ -37,7 +37,7 @@ DECRIRE PLUS
 
 ### Part 1 : Quantitative analysis of gender inequalities in movies
 - Age of actors and actresses : Analysis of distributions and of the statistical significance (t-test), Evolution across the years with confidence interval
-- Gender distribution in charcters: quantification and analysis across the years with confidence interval
+- Gender distribution in characters: quantification and analysis across the years with confidence interval
 - Analysis across genre of movie of age and gender distribution
 - Analysis of number of movies shot per actor and actress
 
@@ -47,7 +47,7 @@ DECRIRE PLUS
 
 ### Part 3 : Analysis of the reception of movies by the public
 - Analysis of the correlation of actresses in a movie and IMDb ratings with a linear regression, calculate statistical significance
-- Analysis of the correlation of actresses in a movie and Bos Office Revenue with a linear regression, calculate statistical significance
+- Analysis of the correlation of actresses in a movie and Box Office Revenue with a linear regression, calculate statistical significance
 - Analysis of award wining movies with the oscar dataset
 - According to the Bechdel test result analysis of the reception of the movie
 
@@ -60,16 +60,18 @@ DECRIRE PLUS
 
 - 24 Nov : Finish quantitative analysis of gender inequalities and of the reception of movies by the public
 - 1 Dec : Finish analysis by geographical production region
-- 8 Dec : Finish qualititative analysis of gender representation in movies and make first version of the website
-- 15 Dec : Finish all the analysis and focus on completing the data story and the esthetics of the website
+- 8 Dec : Finish qualitative analysis of gender representation in movies and make first version of the website
+- 15 Dec : Finish all the analysis and focus on completing the data story and the aesthetics of the website
 - 22 Dec : Final deadline for P3
 
 ## Organization within the team
 | | Task |
 | :---:|---|
-| Amélie | |
-| Anna-Rose | |
-| Coline | |
-| Elisa | Analysis of Box office revenue and ratings, README |
-| Jeanne | |
+| Amélie | Preprocessing of movie data set, Preprocessing of geographical regions|
+| Anna-Rose |Cluster character types from the movie plots|
+| Coline | Preprocessing of the character data set and IMDb, Age analysis|
+| Elisa | Analysis of Box office revenue and ratings, Preprocessing of awards |
+| Jeanne | Preprocessing of Bechdel test, Geographical analysis |
+
 ## Questions
+- Concerning the Bechdel data set: when merging with the CMU dataset, we are left with around 5 000 movies (6.17 % of the original). Can we consider this data set usable even if our analysis relies on only a fraction of the movies ?
