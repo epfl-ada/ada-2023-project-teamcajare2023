@@ -28,7 +28,7 @@ Knowing that women are treated differently in the movie industry, we are interes
   - We deleted the rows for which we had no information on gender.
   - We conducted an inner join between the movies and characters datasets to include only movies with characters in our analysis, thereby populating the characters dataset.
   - We filtered the dataset to include only movies from 1920 to 2012, ensuring a minimum of 200 movies and 100 characters per year.
-  - We standardized country names using the pycountry library's ISO databases and added continent information. Rows with multiple continents were removed.
+  - We standardized country names using the pycountry library's ISO databases and added continent information. Rows with multiple different continents were removed.
 
 - **IMDb Dataset**
   - The IMDb dataset comprises two files—one with ratings and another with various movie names. We calculated the average ratings for each movie.
