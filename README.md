@@ -11,10 +11,10 @@ To decipher and validate or debunk these common perceptions, our analysis will b
 ## Research questions
 
 Knowing that women are treated differently in the movie industry, we are interested to dig deeper:
-- Explore quantitatively the extend of the inequalities in the representation of women in movies: How younger are the actresses compared to the actors? What is the difference in the proportion of actresses and actors? What genres are more prone to inequalities?
+- Explore quantitatively the extend of the inequalities in the representation of women: How younger are the actresses compared to the actors? What is the difference in the proportion of actresses and actors? What genres are more prone to inequalities?
 - Explore qualitatively how women are represented in the movies through the character types of female and male roles: what are the typical roles? How have they evolved?
-- Understand how movies with higher proportions of women are received by the public: are those movies more or less popular? How are they rated? Do they really have less commercial success than movies with more men?
-- Analyse those differences around three geographical areas we have chosen (United States of America, India and Europe): are the preconceived ideas about Hollywood, Bollywood and European movie industries true when it comes to the roles of women in the plot? 
+- Understand how movies with higher proportions of women are received by the public: are those movies more or less popular? How are they rated? Do they have less commercial success than movies with more men?
+- Analyse those differences around three geographical areas we have chosen (USA, India and Europe): are the preconceived ideas about Hollywood, Bollywood and European movie industries true when it comes to the roles of women in the plot? 
 
 ## Proposed additional datasets 
 
@@ -33,7 +33,7 @@ After having downloaded the characters and movies metadata as well as IMDb data,
 We merge the movies and characters datasets. In it, we keep only the 16 more frequent movie genres
 DECRIRE PLUS
 
-## Step 3: Analysis
+## Step 2: Analysis
 
 ### Part 1 : Quantitative analysis of gender inequalities in movies
 - Age of actors and actresses and Gender distribution in characters: Analysis of distributions and of the statistical significance (t-test), Evolution across the years with confidence interval
@@ -65,10 +65,10 @@ DECRIRE PLUS
 | | Task |
 | :---:|---|
 | Amélie | Preprocessing of movie data set, Preprocessing of geographical regions|
-| Anna-Rose |Cluster character types from the movie plots|
+| Anna-Rose | Cluster character types from the movie plots|
 | Coline | Preprocessing of the character data set and IMDb, Age analysis|
-| Elisa | Analysis of Box office revenue and ratings, Preprocessing of awards |
+| Elisa | Analysis of Box-office revenue and ratings, Preprocessing of awards |
 | Jeanne | Preprocessing of Bechdel test, Geographical analysis |
 
 ## Questions
-- Concerning the Bechdel data set: when merging with the CMU dataset, we are left with around 5 000 movies ( only 6.17 % of the original). Can we consider this data set usable?
+- Bechdel data set: when merging with the CMU dataset, we are left with around 5000 movies (only 6.17 % of the original). Can we consider this data set usable?
