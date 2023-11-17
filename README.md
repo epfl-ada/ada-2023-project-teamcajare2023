@@ -32,7 +32,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 - **IMDb Dataset**
   - The IMDb dataset comprises two files—one with ratings and another with various movie names. We calculated the average ratings for each movie.
-  - We merged the IMDb dataset with the CMU dataset using the (English) movie name and release year as the merging criteria.
+  - We merged the IMDb dataset with the CMU dataset using the (english) movie name and release year as the merging criteria.
 
 - **Bechdel Dataset** We changed the movie names to align with the CMU format and then merged them based on the movie name and release year.
 
