@@ -78,3 +78,19 @@ def process_countries(countries):
         return valid_countries if valid_countries else None
     else:
         return countries if countries != 'not found' else None
+
+
+def percent_missing_strdict(data): 
+    '''
+    Count the number of missing values in a Series containing str-like dictionnaries
+    
+    Parameters:
+    - data (pandas.core.series.Series): The input Series to count the missing values
+    
+    Returns:
+    - float: The percentage of missing values in the Series
+    '''
+    N = len(data)
+    missing_values = [1 if len(row) == 0 else 0 for i, row in enumerate(data)]
+    percent_missing=(sum(missing_values)/N)*100
+    return(percent_missing)
