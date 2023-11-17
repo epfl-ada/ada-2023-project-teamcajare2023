@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Our aim is to examine to which extend the film industry, a mirror of societal norms, perpetuates stereotypes about women, from domestic roles to leadership doubts and beauty standards. We will also explore regional variations: American cinema's potential focus on masculinity in blockbusters, European films' artistic and intellectual nature with possibly greater gender equity, and Bollywood's family-centric themes affecting actresses' roles. Our analysis starts with the evolving roles of women in movies, then compares these across various movie industries.
+Our aim is to examine the extent to which the film industry, as a mirror of societal norms, perpetuates stereotypes about women, whether in terms of domestic roles, leadership doubts or standards of beauty. We will also explore regional variations: American cinema's emphasis on masculinity in blockbusters, the artistic and intellectual nature of European films, with perhaps greater gender equity, and Bollywood's family-centric themes, which affect the roles of female actors. Our analysis begins with the changing roles of women in films, and then compares them across different film industries.
 
 ## Research questions
 
