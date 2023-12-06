@@ -52,7 +52,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 ### Part 3 : Analysis of the reception of movies by the public
 - Analysis of the correlation of actresses in a movie and IMDb ratings with a linear regression, calculate statistical significance (same with Box Office Revenue)
-- Analysis of award wining movies with the oscar dataset
+- Analysis of award winning movies with the oscar dataset
 - Analysis of the Bechdel test result in relation with the reception of the movie
 
 ### Part 4 : Analysis by geographical production region
