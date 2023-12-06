@@ -48,7 +48,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 ### Part 2 : Qualitative analysis of gender representation in movies
 - Word Cloud visualization of common character tropes per gender
-- Cluster character types from the movie plots: the authors of the dataset used the CoreNLP toolkit developed by Stanford University to parse the movie plot summaries. Extract meaningful information about the characters: what action they are the agent or patient of, what their attributes are, how many times they are mentioned in the summary (proxy to identify the main character). With all of those information, we will cluster the characters to identify similar ones and then perform further analysis of those cluster (gender, longitudinal and geographical differences).
+- Cluster character types from the movie plots: the authors of the dataset used the CoreNLP toolkit developed by Stanford University to parse the movie plot summaries. Extract meaningful information about the characters: what action they are the agent or patient of, what their attributes are, how many times they are mentioned in the summary (proxy to identify the main character). With all of that information, we will cluster the characters to identify similar ones and then perform further analysis of those clusters (gender, longitudinal and geographical differences).
 
 ### Part 3 : Analysis of the reception of movies by the public
 - Analysis of the correlation of actresses in a movie and IMDb ratings with a linear regression, calculate statistical significance (same with Box Office Revenue)
