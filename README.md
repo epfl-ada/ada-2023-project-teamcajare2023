@@ -7,7 +7,7 @@ Our aim is to examine the extent to which the film industry, as a mirror of soci
 ## Research questions
 
 Knowing that women are treated differently in the movie industry, we are interested to dig deeper:
-- Explore quantitatively the extend of the inequalities in the representation of women: How younger are the actresses compared to the actors? What is the difference in the proportion of actresses and actors? What genres are more prone to inequalities?
+- Explore quantitatively the extent of the inequalities in the representation of women: How younger are the actresses compared to the actors? What is the difference in the proportion of actresses and actors? What genres are more prone to inequalities?
 - Explore qualitatively how women are represented in the movies through the character types of female and male roles: what are the typical roles? How have they evolved?
 - Understand how movies with higher proportions of women are received by the public: are those movies more or less popular? How are they rated? Do they have less commercial success than movies with more men?
 - Analyse those differences around three geographical areas we have chosen (USA, India and Europe): are the preconceived ideas about Hollywood, Bollywood and European movie industries true when it comes to the roles of women in the plot? 
