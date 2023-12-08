@@ -389,17 +389,17 @@ def get_list_movie(movie_xml, data_path = CORE_NLP_XML):
     for character in characters_list:
         if character in agent_verbs:
             agent_verbs_string = ', '.join(agent_verbs[character])
-            agent_verbs_list = agent_verbs_string.split(",")
+            agent_verbs_list = set(agent_verbs_string.split(",")) #set removes duplicates in the list
         else:
             agent_verbs_list = []
         if character in patient_verbs:
             patient_verbs_string = ', '.join(patient_verbs[character])
-            patient_verbs_list = patient_verbs_string.split(",")
+            patient_verbs_list = set(patient_verbs_string.split(","))
         else:
             patient_verbs_list = []
         if character in attributes:
             attributes_string = ', '.join(attributes[character])
-            attributes_list = attributes_string.split(",")
+            attributes_list = set(attributes_string.split(","))
         else:
             attributes_list = []
         
