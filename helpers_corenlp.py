@@ -389,18 +389,22 @@ def get_list_movie(movie_xml, data_path = CORE_NLP_XML):
     for character in characters_list:
         if character in agent_verbs:
             agent_verbs_string = ', '.join(agent_verbs[character])
+            agent_verbs_list = agent_verbs_string.split(",")
         else:
-            agent_verbs_string = None
+            agent_verbs_list = []
         if character in patient_verbs:
             patient_verbs_string = ', '.join(patient_verbs[character])
+            patient_verbs_list = patient_verbs_string.split(",")
         else:
-            patient_verbs_string = None
+            patient_verbs_list = []
         if character in attributes:
             attributes_string = ', '.join(attributes[character])
+            attributes_list = attributes_string.split(",")
         else:
-            attributes_string = None
-        lst.append({'WikiMovieID': movie_id,'CharacterName': character, 'Agent verbs': agent_verbs_string, 
-                        'Patient verbs': patient_verbs_string, 'Attributes': attributes_string, 
+            attributes_list = []
+        
+        lst.append({'WikiMovieID': movie_id,'CharacterName': character, 'Agent verbs': agent_verbs_list, 
+                        'Patient verbs': patient_verbs_list, 'Attributes': attributes_list, 
                         'Mentions': mentions[character], 'MainCharacter': character == main_char})
         
     return lst
