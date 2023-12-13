@@ -94,3 +94,22 @@ def percent_missing_strdict(data):
     missing_values = [1 if len(row) == 0 else 0 for i, row in enumerate(data)]
     percent_missing=(sum(missing_values)/N)*100
     return(percent_missing)
+
+def exact_match(columns, row1, row2):
+    """
+    Check if two rows are an exact match on specified columns.
+
+    Parameters:
+    - columns (list): List of column names to consider for the match.
+    - control_row (pd.Series): Row from the control group.
+    - treatment_row (pd.Series): Row from the treatment group.
+
+    Returns:
+    - bool: True if the rows are an exact match on the specified columns, False otherwise.
+    """
+
+    for col in columns:
+        if row1[col] != row2[col] :
+            return False
+    
+    return True
