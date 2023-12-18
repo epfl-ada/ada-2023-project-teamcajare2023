@@ -113,3 +113,18 @@ def exact_match(columns, row1, row2):
             return False
     
     return True
+
+def numpy_helper(df, cols):
+    '''
+    Convert a DataFrame with N rows and a list of M columns to a np.array of dimension (NxM).
+
+    Parameters:
+    - df (pd.DataFrame): Input DataFrame with N rows.
+    - cols (list): List of column names to be included in the resulting array.
+
+    Returns:
+    - np.array: np.array of dimension (NxM).
+    '''
+
+    array = df[cols].to_numpy(copy = True, dtype= float) 
+    return array
