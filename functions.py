@@ -2,6 +2,7 @@ import pandas as pd
 import pycountry
 import pycountry_convert as pc
 import swifter
+import networkx as nx
 
 from functools import lru_cache
 
@@ -128,3 +129,71 @@ def numpy_helper(df, cols):
 
     array = df[cols].to_numpy(copy = True, dtype= float) 
     return array
+
+def find_main_char(cast):
+    """
+    Find the main character in the cast list based on the minimum cast_id.
+
+    Parameters:
+    - cast (list): A list of dictionaries representing the cast.
+
+    Returns:
+    - tuple: A tuple containing the main character details (character, actor, gender, cast_id).
+    - None: If the input list is empty.
+    """
+    if not cast:
+        return None
+    
+    # Find the minimum cast_id
+    min_id = min(el['cast_id'] for el in cast)
+
+
+    # Find the details of the main character with the minimum cast_id
+    main_char, main_actor, main_gender, main_cast = next(
+        (el['character'], el['name'], el['gender'], el['cast_id']) for el in cast if el['cast_id'] == min_id
+    )
+
+    return main_char, main_actor, main_gender, main_cast
+
+def create_pairs (columns, df1, df2):
+    """
+    Create maximal matching pairs of rows from df1 and df2 based on the exact_match_columns.
+
+    Parameters:
+    - columns (list): List of column names to consider for the match.
+
+    Returns:
+    - pairs: A list of the paired rows, represented by their indexes in df1 and df2 respectively.
+    """
+    # Create an empty undirected graph
+    G = nx.Graph()
+
+    i = 0
+    n = len(df1)
+    # Loop through all the pairs of instances
+    for df1_id, df1_row in df1.iterrows():
+        i = i+1
+        print(f'Row {i} out of {n}')
+        for df2_id, df2_row in df2.iterrows():
+        
+            # Add an edge between the two instances if same track and same score before
+            if exact_match(columns,  df1_row, df2_row):
+                G.add_edge(df1_id, df2_id)
+
+    print('loop finished')
+    # Generate and return the maximum weight matching on the generated graph
+    return nx.maximal_matching(G)
+
+def create_bins_of_5_years(df):
+   
+    # Create bins for every 5 years starting from the minimum release year to the maximum release year
+    min_year = int(df['ReleaseYear'].min())
+    max_year = int(df['ReleaseYear'].max())
+    bins = list(range(min_year, max_year + 6, 5))  # Adding 6 to include the upper bound
+
+    # Create labels for the bins
+    labels = [f'{start}-{start+4}' for start in bins[:-1]]
+
+    # Use pd.cut to categorize release years into bins
+    df['ReleaseYearBin'] = pd.cut(df['ReleaseYear'], bins=bins, labels=labels, include_lowest=True)
+    return df
