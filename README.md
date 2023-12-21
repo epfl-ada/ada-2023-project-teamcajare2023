@@ -17,7 +17,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 ## Proposed additional datasets 
 
-**The Movies dataset**: TO ADD
+**The Movies dataset**: The main character often serves as the narrative anchor, around whom the story revolves. They are typically central to the plot, driving the storyline forward and engaging the audience's interest and emotions. In our pursuit to understand the significance of the main character's gender, we used this [kaggle dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) containing informations about the cast of a movie to retrieve its main character and its associated gender.
 
 **IMDb ratings**: IMDb is an [online database](https://datasets.imdbws.com/) of information related to films, television series and more, where users can rate the films they watch from 1 to 10. We are mainly interested in the IMDb average score and number of votes per movie (title.ratings.tsv and title.basics.tsv).
 
