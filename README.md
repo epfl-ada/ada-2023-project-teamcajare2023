@@ -94,13 +94,11 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 - Causal examination of the impact of female character percentage and main character gender on IMDb ratings.
   
-  -  *Methodology*: Exact matching based on 5-year bins for release year periods, movie genre and production country.
-  
+  - *Methodology*: Exact matching based on 5-year bins for release year periods, movie genre and production country.
   - *Analysis*:
     -  Employ linear regression models to predict IMDb ratings:
         - Using the percentage of female characters.
         - Using the main character's gender.
-        
     - Regressor Analysis:
       - Evaluate mean-squared error between two GradientBoostingRegression models: one includes the percentage of female characters (or main character's gender); the other excludes it.
 
@@ -114,7 +112,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 - **TO CHECK** Qualitative analysis of the character cluster per production region.
 
 - Causal analysis of the differences of percentage of female characters in movies produced in Europe, India and the USA.
-  - *Methodology*: exact matching on the release year period (5-year bins) and movie genre
+  - *Methodology*: exact matching on the release year period (5-year bins) and movie genre.
   - *Analysis*: ANOVA to assess the signifiance of the difference and Tukey's test to find in which group the difference is significant.
 
 
