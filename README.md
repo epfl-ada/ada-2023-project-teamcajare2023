@@ -1,7 +1,7 @@
 # Unraveling Gender Stereotypes Across Movie Industries
 ___Are our preconceived ideas on gender inequality true?___
 
-Look at our [datastory](https://elisabillard.github.io/#Ethical) first !
+Look at our [datastory](https://elisabillard.github.io) first !
 
 ## Abstract
 
