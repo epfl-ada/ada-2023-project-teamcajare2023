@@ -1,4 +1,7 @@
-# Studying the evolution of gender in movies across the world: roles given to women and public perception
+# Unraveling Gender Stereotypes Across Movie Industries
+___Are our preconceived ideas on gender inequality true?___
+
+Look at our [datastory](https://elisabillard.github.io/#Ethical) first !
 
 ## Abstract
 
@@ -8,9 +11,9 @@ Our aim is to examine the extent to which the film industry, as a mirror of soci
 
 Knowing that women are treated differently in the movie industry, we are interested to dig deeper:
 - Explore quantitatively the extent of the inequalities in the representation of women: How younger are the actresses compared to the actors? What is the difference in the proportion of actresses and actors? What genres are more prone to inequalities?
-- Explore qualitatively how women are represented in the movies through the character types of female and male roles: what are the typical roles? How have they evolved?
+- Explore qualitatively how women are represented in the movies through the character types of female and male roles: what are the typical roles? 
 - Understand how movies with higher proportions of women and feminine main characters are received by the public: are those movies more or less popular? How are they rated? Do they have less commercial success than movies with more men?
-- Analyze those differences around three geographical areas we have chosen (USA, India and Europe): are the preconceived ideas about Hollywood, Bollywood and European movie industries true when it comes to the roles of women in the plot? 
+- Analyze those differences around three geographical areas we have chosen (USA, India and Europe): are the preconceived ideas about Hollywood, Bollywood and European movie industries true when it comes to the representation of women in the plot? 
 
 ## Proposed additional datasets 
 
@@ -96,10 +99,10 @@ Knowing that women are treated differently in the movie industry, we are interes
   
   - *Methodology*: Exact matching based on 5-year bins for release year periods, movie genre and production country.
   - *Analysis*:
-    -  Employ linear regression models to predict IMDb ratings:
+    - Employ linear regression models to predict IMDb ratings:
         - Using the percentage of female characters.
         - Using the main character's gender.
-    - Regressor Analysis:
+    - Machine Learning Regressor Analysis:
       - Evaluate mean-squared error between two GradientBoostingRegression models: one includes the percentage of female characters (or main character's gender); the other excludes it.
 
 #### Industry reception: Influence of the main character's gender on award nomination
@@ -112,7 +115,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 - **TO CHECK** Qualitative analysis of the character cluster per production region.
 
 - Causal analysis of the differences of percentage of female characters in movies produced in Europe, India and the USA.
-  - *Methodology*: exact matching on the release year period (5-year bins) and movie genre.
+  - *Methodology*: exact matching (triplet of movies) on the release year period (5-year bins) and movie genre.
   - *Analysis*: ANOVA to assess the signifiance of the difference and Tukey's test to find in which group the difference is significant.
 
 
@@ -131,5 +134,5 @@ Knowing that women are treated differently in the movie industry, we are interes
 | Amélie | Preprocessing of movie data set, preprocessing of geographical regions, award nomination analysis, data story writing, building of the data story's website |
 | Anna-Rose | Preprocessing of the CoreNLP dataset, cluster character types from the movie plots, building of the gender classifier |
 | Coline | Preprocessing of the character data set and IMDb, age analysis, Sentiment analysis, geographical analysis, analysis of rating |
-| Elisa | Analysis of Box-office revenue and ratings, preprocessing of the awards dataset, data story writing, building of the data story's website |
+| Elisa | Analysis of Box-office revenue and ratings, preprocessing of the awards dataset, geographical matching, data story writing, building of the data story's website |
 | Jeanne | Geographical analysis, |
