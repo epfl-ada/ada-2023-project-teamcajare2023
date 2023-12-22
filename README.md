@@ -1,7 +1,7 @@
 # Unraveling Gender Stereotypes Across Movie Industries
 ___Are our preconceived ideas on gender inequality true?___
 
-Look at our [datastory](https://elisabillard.github.io) first !
+Look at our [datastory](https://elisabillard.github.io) here !
 
 ## Abstract
 
@@ -19,9 +19,11 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 **The Movies dataset**: The main character often serves as the narrative anchor, around whom the story revolves. They are typically central to the plot, driving the storyline forward and engaging the audience's interest and emotions. In our pursuit to understand the significance of the main character's gender, we used this [kaggle dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) containing informations about the cast of a movie to retrieve its main character and its associated gender.
 
+**CoreNLP parsed summaries**: To learn more about how characters are described, we use a [supplement](http://www.cs.cmu.edu/~ark/personas/) of our main dataset consisting of the movie summaries parsed using the Stanford CoreNLP toolkit. This dataset allows to extract different types of words referring to the characters in the summaries.
+
 **IMDb ratings**: IMDb is an [online database](https://datasets.imdbws.com/) of information related to films, television series and more, where users can rate the films they watch from 1 to 10. We are mainly interested in the IMDb average score and number of votes per movie (title.ratings.tsv and title.basics.tsv).
 
-**Oscar awards**: Awards are international recognition of excellence in cinema. Using this [kaggle dataset](https://www.kaggle.com/datasets/unanimad/the-oscar-award) we got the list of films that were awarded by the Academy Awards.
+**Oscar awards**: Awards are international recognition of excellence in cinema. Using this [kaggle dataset](https://www.kaggle.com/datasets/unanimad/the-oscar-award) we got the list of films that were nominated and awarded by the Academy Awards.
 
 
 ## Methods
@@ -40,6 +42,11 @@ Knowing that women are treated differently in the movie industry, we are interes
   - We identified, for each movie of the dataset, the main character, the actor who interpreted it and its gender.
   - We deleted the rows for which we had no information on gender.
 
+- **CoreNLP parsed summaries**
+  - We extracted the full names of the characters mentioned in the movie summaries.
+  - For each of the character identified, we searched for the agent verbs, patient verbs and attributes that desribe them.
+  - We used the spaCy natural language processing library to get words embeddings of the character descriptions.
+
 - **IMDb Dataset**
   - The IMDb dataset comprises two files—one with ratings and another with various movie names. We calculated the average ratings for each movie.
   - We merged the IMDb dataset with the CMU dataset using the (english) movie name and release year as the merging criteria.
@@ -57,7 +64,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 #### Sentiment analysis
 - *Objective*: Perform causal analysis on the impact of female character percentage and main character gender on film sentiment.
-- *Methodology*: Use exact matching based on 5-year bin release periods, movie genre and production country.
+- *Methods*: Use exact matching based on 5-year bin release periods, movie genre and production country.
 - *Analysis*: Employ linear regression to predict film sentiment. 
   - Use separately:
     - Female character percentage.
@@ -72,7 +79,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 #### Cluster character types from the movie plots
 
 - *Objective*: Identify patterns and associations between linguistic elements for character type classification.
-- *Method*:
+- *Methods*:
   - Using the CoreNLP parsed movie summaries provided by the authors of the dataset, extract agent verbs, patient verbs and attributes describing all characters.
   - Create representations of the characters using word vectors weighted by their inverse document frequency (IDF).
   - Cluster these representations by first reducing dimensionality and then performing K-means.
@@ -82,7 +89,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 #### Predict a character's gender based on its linguistic features
 - *Objective*: Identify patterns and associations between linguistic elements and gender for character classification.
-- *Method*: Develop a neural network classifier to predict the character's gender.
+- *Methods*: Develop a neural network classifier to predict the character's gender.
 - *Input Features*:
   - Attributes word vectors.
   - Agent verbs word vectors.
@@ -96,7 +103,7 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 - Causal examination of the impact of female character percentage and main character gender on IMDb ratings.
   
-  - *Methodology*: Exact matching based on 5-year bins for release year periods, movie genre and production country.
+  - *Methods*: Exact matching based on 5-year bins for release year periods, movie genre and production country.
   - *Analysis*:
     - Employ linear regression models to predict IMDb ratings:
         - Using the percentage of female characters.
@@ -106,15 +113,14 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 #### Industry reception: Influence of the main character's gender on award nomination
 - Causal analysis of the impact of the main character's gender on the likelihood of receiving award nominations.
-  - *Methodology*:  exact matching on the release year period, the movie genre and the production country
+  - *Methods*:  Exact matching on the release year period (5-year bins), the movie genre and the production country
   - *Analysis*: Logit regression to predict the likelihood of being nominated for an award based on the main character's gender.
 
 
 ### Part 4 : Analysis by geographical production region
-- **TO CHECK** Qualitative analysis of the character cluster per production region.
 
 - Causal analysis of the differences of percentage of female characters in movies produced in Europe, India and the USA.
-  - *Methodology*: exact matching (triplet of movies) on the release year period (5-year bins) and movie genre.
+  - *Methods*: Exact matching (triplet of movies) on the release year period (5-year bins) and movie genre.
   - *Analysis*: ANOVA to assess the signifiance of the difference and Tukey's test to find in which group the difference is significant.
 
 
@@ -132,6 +138,6 @@ Knowing that women are treated differently in the movie industry, we are interes
 | :---:|---|
 | Amélie | Preprocessing of movie data set, preprocessing of geographical regions, award nomination analysis, data story writing, building of the data story's website |
 | Anna-Rose | Preprocessing of the CoreNLP dataset, cluster character types from the movie plots, building of the gender classifier |
-| Coline | Preprocessing of the character data set and IMDb, age analysis, Sentiment analysis, geographical analysis, analysis of rating |
+| Coline | Preprocessing of the character data set and IMDb, age analysis, sentiment analysis, geographical analysis, analysis of rating |
 | Elisa | Analysis of Box-office revenue and ratings, preprocessing of the awards dataset, geographical matching, data story writing, building of the data story's website |
-| Jeanne | Geographical analysis, |
+| Jeanne | Geographical analysis |
