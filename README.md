@@ -140,4 +140,4 @@ Knowing that women are treated differently in the movie industry, we are interes
 | Anna-Rose | Preprocessing of the CoreNLP dataset, cluster character types from the movie plots, building of the gender classifier |
 | Coline | Preprocessing of the character data set and IMDb, age analysis, sentiment analysis, geographical analysis, analysis of rating |
 | Elisa | Analysis of Box-office revenue and ratings, preprocessing of the awards dataset, geographical matching, data story writing, building of the data story's website |
-| Jeanne | Geographical analysis |
+| Jeanne | Geographical analysis, gender distribution analysis, map tracing |
