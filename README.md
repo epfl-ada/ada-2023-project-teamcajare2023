@@ -19,6 +19,8 @@ Knowing that women are treated differently in the movie industry, we are interes
 
 **The Movies dataset**: The main character often serves as the narrative anchor, around whom the story revolves. They are typically central to the plot, driving the storyline forward and engaging the audience's interest and emotions. In our pursuit to understand the significance of the main character's gender, we used this [kaggle dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) containing informations about the cast of a movie to retrieve its main character and its associated gender.
 
+**CoreNLP parsed summaries**: To learn more about how characters are described, we use a [supplement](http://www.cs.cmu.edu/~ark/personas/) of our main dataset consisting of the movie summaries parsed using the Stanford CoreNLP toolkit. This dataset allows to extract different types of words referring to the characters in the summaries.
+
 **IMDb ratings**: IMDb is an [online database](https://datasets.imdbws.com/) of information related to films, television series and more, where users can rate the films they watch from 1 to 10. We are mainly interested in the IMDb average score and number of votes per movie (title.ratings.tsv and title.basics.tsv).
 
 **Oscar awards**: Awards are international recognition of excellence in cinema. Using this [kaggle dataset](https://www.kaggle.com/datasets/unanimad/the-oscar-award) we got the list of films that were nominated and awarded by the Academy Awards.
@@ -39,6 +41,11 @@ Knowing that women are treated differently in the movie industry, we are interes
 - **The Movies Dataset**
   - We identified, for each movie of the dataset, the main character, the actor who interpreted it and its gender.
   - We deleted the rows for which we had no information on gender.
+
+- **CoreNLP parsed summaries**
+  - We extracted the full names of the characters mentioned in the movie summaries.
+  - For each of the character identified, we searched for the agent verbs, patient verbs and attributes that desribe them.
+  - We used the spaCy natural language processing library to get words embeddings of the character descriptions.
 
 - **IMDb Dataset**
   - The IMDb dataset comprises two files—one with ratings and another with various movie names. We calculated the average ratings for each movie.
