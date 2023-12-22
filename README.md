@@ -72,22 +72,21 @@ Knowing that women are treated differently in the movie industry, we are interes
 #### Cluster character types from the movie plots
 
 - *Objective*: Identify patterns and associations between linguistic elements for character type classification.
-- *Method*: **TO ADD**.
-- *Input Features*:
-  - Attributes.
-  - Agent verbs.
-  - Patient verbs.
-
-
-**Ancien texte** - : the authors of the dataset used the CoreNLP toolkit developed by Stanford University to parse the movie plot summaries. Extract meaningful information about the characters: what action they are the agent or patient of, what their attributes are, how many times they are mentioned in the summary (proxy to identify the main character). With all of that information, we will cluster the characters to identify similar ones and then perform further analysis of those clusters (gender, longitudinal and geographical differences).
+- *Method*:
+  - Using the CoreNLP parsed movie summaries provided by the authors of the dataset, extract agent verbs, patient verbs and attributes describing all characters.
+  - Create representations of the characters using word vectors weighted by their inverse document frequency (IDF).
+  - Cluster these representations by first reducing dimensionality and then performing K-means.
+- *Analysis*:
+  - Study percentage of female characters in the obtained clusters.
+  - Qualitative characterization of clusters that are significantly gendered using wordclouds.
 
 #### Predict a character's gender based on its linguistic features
 - *Objective*: Identify patterns and associations between linguistic elements and gender for character classification.
 - *Method*: Develop a neural network classifier to predict the character's gender.
 - *Input Features*:
-  - Attributes.
-  - Agent verbs.
-  - Patient verbs.
+  - Attributes word vectors.
+  - Agent verbs word vectors.
+  - Patient verbs word vectors.
 
 
 ### Part 3 : Analysis of the reception of movies by the public & cinema industry
