@@ -6,6 +6,10 @@ import networkx as nx
 import numpy as np
 import plotly.graph_objects as go
 from scipy import stats
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud
+import spacy
+nlp = spacy.load("en_core_web_lg")
 
 
 from functools import lru_cache
@@ -305,3 +309,99 @@ def add_p_value_annotation(fig, array_columns, subplot=None, _format=dict(interl
             yref="y"+subplot_str+" domain"
         ))
     return fig
+
+def create_wordcloud(cluster, clusters_df, colormap):
+    '''
+    Plot wordclouds showing the most frequent words in each category for the given cluster number.
+    param cluster: the cluster number
+    '''
+
+    agent_verbs = clusters_df[clusters_df["cluster"] == cluster]['Agent verbs'].tolist()
+    agent_verbs = [item for sublist in agent_verbs for item in sublist]
+    agent_verbs_lemma = [nlp(verb)[0].lemma_ for verb in agent_verbs]
+
+    patient_verbs = clusters_df[clusters_df["cluster"] == cluster]['Patient verbs'].tolist()
+    patient_verbs = [item for sublist in patient_verbs for item in sublist]
+    patient_verbs_lemma = [nlp(verb)[0].lemma_ for verb in patient_verbs]
+
+    attributes = clusters_df[clusters_df["cluster"] == cluster]['Attributes'].tolist()
+    attributes = [item for sublist in attributes for item in sublist]
+    attributes_lemma = [nlp(attribute)[0].lemma_ for attribute in attributes]
+
+    # create wordclouds for each category
+    agent_verbs_cloud = WordCloud(background_color="white", max_words=100, width=800, height=400, colormap=colormap).generate(' '.join(agent_verbs_lemma))
+    patient_verbs_cloud = WordCloud(background_color="white", max_words=100, width=800, height=400, colormap=colormap).generate(' '.join(patient_verbs_lemma))
+    attributes_cloud = WordCloud(background_color="white", max_words=100, width=800, height=400, colormap=colormap).generate(' '.join(attributes_lemma))
+
+    # Plotting the WordClouds
+    plt.figure(figsize=(12, 6))
+
+    plt.suptitle(('Cluster ' + str(cluster)), fontsize=20)
+
+    plt.subplot(3, 1, 1)
+    plt.imshow(agent_verbs_cloud, interpolation='bilinear')
+    plt.title('Agent verbs', color='black', fontsize=16)
+    plt.axis('off')
+
+    plt.subplot(3, 1, 2)
+    plt.imshow(patient_verbs_cloud, interpolation='bilinear')
+    plt.title('Patient verbs', color='black', fontsize=16)
+    plt.axis('off')
+
+    plt.subplot(3, 1, 3)
+    plt.imshow(attributes_cloud, interpolation='bilinear')
+    plt.title('Attributes', color='black', fontsize=16)
+    plt.axis('off')
+
+    plt.show()
+
+def create_corrected_wordcloud(cluster, clusters_df, outliers_agent_verbs, outliers_patient_verbs, outliers_attributes, colormap):
+    '''
+    Plot wordclouds showing the most frequent words in each category for the given cluster number.
+    The wordclouds are corrected in the sense that we remove the "general" words that appear very frequently in each category 
+    to focus on the words that are more specific to the cluster.
+    param cluster: the cluster number
+    '''
+    
+    agent_verbs = clusters_df[clusters_df["cluster"] == cluster]['Agent verbs'].tolist()
+    agent_verbs = [item for sublist in agent_verbs for item in sublist]
+    agent_verbs = [word for word in agent_verbs if word not in outliers_agent_verbs]
+    agent_verbs_lemma = [nlp(verb)[0].lemma_ for verb in agent_verbs]
+    agent_verbs_lemma = [word for word in agent_verbs_lemma if word not in outliers_agent_verbs]
+
+    patient_verbs = clusters_df[clusters_df["cluster"] == cluster]['Patient verbs'].tolist()
+    patient_verbs = [item for sublist in patient_verbs for item in sublist]
+    patient_verbs_lemma = [nlp(verb)[0].lemma_ for verb in patient_verbs]
+    patient_verbs_lemma = [word for word in patient_verbs_lemma if word not in outliers_patient_verbs]
+
+    attributes = clusters_df[clusters_df["cluster"] == cluster]['Attributes'].tolist()
+    attributes = [item for sublist in attributes for item in sublist]
+    attributes_lemma = [nlp(attribute)[0].lemma_ for attribute in attributes]
+    attributes_lemma = [word for word in attributes_lemma if word not in outliers_attributes]
+
+    # create wordclouds for each category
+    agent_verbs_cloud = WordCloud(background_color="white", max_words=100, width=800, height=400, colormap=colormap).generate(' '.join(agent_verbs_lemma))
+    patient_verbs_cloud = WordCloud(background_color="white", max_words=100, width=800, height=400, colormap=colormap).generate(' '.join(patient_verbs_lemma))
+    attributes_cloud = WordCloud(background_color="white", max_words=100, width=800, height=400, colormap=colormap).generate(' '.join(attributes_lemma))
+
+    # Plotting the WordClouds
+    plt.figure(figsize=(12, 6))
+
+    plt.suptitle(('Cluster ' + str(cluster)), fontsize=20)
+
+    plt.subplot(3, 1, 1)
+    plt.imshow(agent_verbs_cloud, interpolation='bilinear')
+    plt.title('Agent verbs', color='black', fontsize=16)
+    plt.axis('off')
+
+    plt.subplot(3, 1, 2)
+    plt.imshow(patient_verbs_cloud, interpolation='bilinear')
+    plt.title('Patient verbs', color='black', fontsize=16)
+    plt.axis('off')
+
+    plt.subplot(3, 1, 3)
+    plt.imshow(attributes_cloud, interpolation='bilinear')
+    plt.title('Attributes', color='black', fontsize=16)
+    plt.axis('off')
+
+    plt.show()
